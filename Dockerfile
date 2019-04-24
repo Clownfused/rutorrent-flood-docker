@@ -1,6 +1,6 @@
 FROM lsiobase/alpine:3.8
 
-MAINTAINER romancin
+MAINTAINER clownfused
 
 # set version label
 ARG BUILD_DATE
