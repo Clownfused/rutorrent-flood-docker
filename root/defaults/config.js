@@ -12,9 +12,7 @@ const CONFIG = {
     socket: true,
     socketPath: '/run/php/.rtorrent.sock'
   },
-  ssl: true,
-  sslKey: '/config/nginx/key.pem',
-  sslCert: '/config/nginx/cert.pem',
+  ssl: false,
 };
 
 module.exports = CONFIG;
