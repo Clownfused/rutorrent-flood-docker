@@ -18,6 +18,8 @@ ARG CURL_VER="7.64.1"
 ENV PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 ENV LD_LIBRARY_PATH=/usr/local/lib
 ENV CONTEXT_PATH=/
+ENV PGID=1000
+ENV PUID=1000 
     
 RUN NB_CORES=${BUILD_CORES-`getconf _NPROCESSORS_CONF`} && \
  apk add --no-cache \
@@ -199,5 +201,5 @@ RUN  apk add --no-cache \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 443 51415 3000
+EXPOSE 80 51415 3000
 VOLUME /config /downloads
