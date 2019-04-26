@@ -98,6 +98,10 @@ ldconfig /usr/bin && ldconfig /usr/lib && \
 # QuickBox Theme
 git clone https://github.com/QuickBox/club-QuickBox /usr/share/webapps/rutorrent/plugins/theme/themes/club-QuickBox && \
 git clone https://github.com/Phlooo/ruTorrent-MaterialDesign /usr/share/webapps/rutorrent/plugins/theme/themes/MaterialDesign && \
+# cfscrape for Cloudflare ruTorrent plugin
+git clone https://github.com/Anorov/cloudflare-scrape.git && \
+cd cloudflare-scrape/ && \
+python3 setup.py install && \
 # ruTorrent plugins
 cd /usr/share/webapps/rutorrent/plugins/ && \
 git clone https://github.com/orobardet/rutorrent-force_save_session force_save_session && \
