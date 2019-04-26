@@ -98,6 +98,12 @@ ldconfig /usr/bin && ldconfig /usr/lib && \
 # QuickBox Theme
 git clone https://github.com/QuickBox/club-QuickBox /usr/share/webapps/rutorrent/plugins/theme/themes/club-QuickBox && \
 git clone https://github.com/Phlooo/ruTorrent-MaterialDesign /usr/share/webapps/rutorrent/plugins/theme/themes/MaterialDesign && \
+# rar for ruTorrent Filemanager plugin
+wget -O rarlinux.tar.gz http://www.rarlab.com/rar/rarlinux-x64-5.5.0.tar.gz && \
+tar -xzvf rarlinux.tar.gz && \
+rm rarlinux.tar.gz && \
+mv -v rar/rar /usr/local/bin/rar && \
+chmod 755 /usr/local/bin/rar && \
 # cfscrape for Cloudflare ruTorrent plugin
 git clone https://github.com/Anorov/cloudflare-scrape.git && \
 cd cloudflare-scrape/ && \
