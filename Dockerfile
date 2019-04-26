@@ -104,6 +104,7 @@ tar -xzvf rarlinux.tar.gz && \
 rm rarlinux.tar.gz && \
 mv -v rar/rar /usr/local/bin/rar && \
 chmod 755 /usr/local/bin/rar && \
+ln -s /usr/local/bin/rar /usr/bin/rar && \
 # cfscrape for Cloudflare ruTorrent plugin
 git clone https://github.com/Anorov/cloudflare-scrape.git && \
 cd cloudflare-scrape/ && \
