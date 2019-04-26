@@ -44,9 +44,10 @@
                 "python" => '/usr/bin/python3',                 // Something like /usr/bin/python3. If empty, will be found in PATH.
 		"php" => '/usr/bin/php7',			// Something like /usr/bin/php. If empty, will be found in PATH.
 		"curl" => '/usr/local/bin/curl',		// Something like /usr/bin/curl. If empty, will be found in PATH.
-		"rar" => '/usr/bin/unrar',			// Something like /usr/bin/rar. If empty, will be found in PATH.
+		"rar" => '/usr/bin/rar',			// Something like /usr/bin/rar. If empty, will be found in PATH.
 		"unrar" => '/usr/bin/unrar',			// Something like /usr/bin/unrar. If empty, will be found in PATH.
-		"gzip"	=> '/usr/bin/gzip',			// Something like /usr/bin/gzip. If empty, will be found in PATH.
+		"gzip"	=> '/usr/bin/gzip',                     // Something like /usr/bin/gzip. If empty, will be found in PATH.
+		"bzip2" => 'usr/bin/bzip2',
 		"id"	=> '/usr/bin/id',			// Something like /usr/bin/id. If empty, will be found in PATH.
 		"stat"	=> '/bin/stat',			        // Something like /usr/bin/stat. If empty, will be found in PATH.
 	);
