@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.8
+FROM lsiobase/alpine:3.9
 
 MAINTAINER clownfused
 
@@ -18,9 +18,9 @@ ARG CURL_VER="7.64.1"
 ENV PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 ENV LD_LIBRARY_PATH=/usr/local/lib
 ENV CONTEXT_PATH=/
+ENV PUID=1000
 ENV PGID=1000
-ENV PUID=1000 
-    
+ 
 RUN NB_CORES=${BUILD_CORES-`getconf _NPROCESSORS_CONF`} && \
  apk add --no-cache \
 	bash-completion \
