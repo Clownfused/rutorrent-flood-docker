@@ -33,7 +33,7 @@ RUN NB_CORES=${BUILD_CORES-`getconf _NPROCESSORS_CONF`} && \
         nginx \
         dtach \
         tar \
-        unrar \
+	unrar \
         unzip \
         sox \
         wget \
@@ -77,6 +77,11 @@ RUN NB_CORES=${BUILD_CORES-`getconf _NPROCESSORS_CONF`} && \
         linux-headers \
         curl-dev \
         libressl-dev && \
+#unrarall 
+git clone http://github.com/arfoll/unrarall.git unrarall/ && \
+chmod a+x unrarall/unrarall && \ 
+cp unrarall/unrarall /usr/local/bin/ && \ 
+ln -s /usr/local/bin/unrarall /usr/bin/unrarall && \
 # compile curl to fix ssl for rtorrent
 cd /tmp && \
 mkdir curl && \
@@ -212,5 +217,5 @@ RUN  apk add --no-cache \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 80 51415 3000
+EXPOSE 80 3000 5000 51415
 VOLUME /config /downloads
